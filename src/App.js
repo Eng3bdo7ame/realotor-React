@@ -7,13 +7,15 @@ import Offer from "./pages/Offer";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Profile from "./pages/Profile";
+import Header from "./componant/Header";
 
 function App() {
   return (
     <>
       <Router>
+        <Header />
         <Routes>
-          <Route path="/" element={<Home />} />{" "}
+          <Route index path="/" element={<Home />} />{" "}
           <Route path="/offer" element={<Offer />} />{" "}
           <Route path="/signin" element={<SignIn />} />{" "}
           <Route path="/signup" element={<SignUp />} />{" "}
